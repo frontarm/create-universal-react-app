@@ -1,6 +1,75 @@
-# Create React App [![Build Status](https://dev.azure.com/facebook/create-react-app/_apis/build/status/facebook.create-react-app?branchName=master)](https://dev.azure.com/facebook/create-react-app/_build/latest?definitionId=1&branchName=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/facebook/create-react-app/pulls)
+# Create (Universal) React App
 
-Create React apps with no build configuration.
+Create Universal React apps, **with Server Side Rendering (SSR)**, with no build configuration.
+
+This is a fork. For details on Create React App itself, see the [official repository &raquo;](https://github.com/facebook/create-react-app/)
+
+---
+
+## Getting Started
+
+### For new projects
+
+To add SSR support to a new create-react-app project, all you need to do is pass the `--react-scripts universal-react-scripts` option to `create-react-app`:
+
+```bash
+npm init react-app --scripts-version universal-react-scripts
+```
+
+With this, you'll get an `src/index.node.js` file in addition to the standard template, from which you can implement server side rendering.
+
+### For existing projects
+
+In your package.json, just change the `react-scripts` dependency to `universal-react-scripts`. _You can leave the occurences of `react-scripts` in the `scripts` object as is._ Then, re-run `yarn install` or `npm install`, and add an `src/index.node.js` file:
+
+```js
+import fs from 'fs';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import './index.css';
+import App from './App';
+
+const renderer = async (request, response) => {
+  // The index.html file is a template, which will have environment variables
+  // and bundled scripts and stylesheets injected during the build step, and
+  // placed at the location specified by `process.env.HTML_TEMPLATE_PATH`.
+  //
+  // To customize the rendered HTML, you can add other placeholder strings,
+  // and replace them within this function -- just as %RENDERED_CONTENT% is
+  // replaced. Note however that if you name the placeholder after an
+  // environment variable available at build time, then it will be
+  // automatically replaced by the build script.
+  let template = fs.readFileSync(process.env.HTML_TEMPLATE_PATH, 'utf8');
+  let [header, footer] = template.split('%RENDERED_CONTENT%');
+  let body = renderToString(<App />);
+  let html = header + body + footer;
+  response.send(html);
+};
+
+export default renderer;
+```
+
+Your app will now call the function exported by `src/index.node.js` to render its HTML.
+
+## Build output
+
+Universal React Scripts outputs two versions of your app: a browser version, and a node version. The node version is just a common-js version of `index.node.js`, which you can import in your express app or serverless function to handle server side rendering.
+
+## `serve` script
+
+Universal React Scripts includes a `serve` script for testing your build output:
+
+```bash
+npm run serve
+
+# or
+
+yarn serve
+```
+
+This launches a server for the content in the `build` folder, and when a `index.node.js` file exists, it loads the Node bundle and server the app with server rendering.
+
+## And now for your regularly scheduled CRA README...
 
 - [Creating an App](#creating-an-app) – How to create a new app.
 - [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
