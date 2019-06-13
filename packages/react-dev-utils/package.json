@@ -1,15 +1,16 @@
 {
-  "name": "react-dev-utils",
+  "name": "universal-react-dev-utils",
   "version": "9.0.1",
   "description": "Webpack utilities used by Create React App",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
-    "directory": "packages/react-dev-utils"
+    "url": "https://github.com/jamesknelson/create-react-app.git",
+    "directory": "packages/react-dev-utils",
+    "branch": "universal-react-scripts"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/jamesknelson/create-react-app/issues"
   },
   "engines": {
     "node": ">=8.10"

@@ -1,18 +1,19 @@
 {
-  "name": "react-scripts",
+  "name": "universal-react-scripts",
   "version": "3.0.1",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
-    "directory": "packages/react-scripts"
+    "url": "https://github.com/jamesknelson/create-react-app.git",
+    "directory": "packages/react-scripts",
+    "branch": "universal-react-scripts"
   },
   "license": "MIT",
   "engines": {
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/jamesknelson/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -38,7 +39,7 @@
     "babel-jest": "^24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-named-asset-import": "^0.3.2",
-    "babel-preset-react-app": "^9.0.0",
+    "babel-preset-universal-react-app": "^9.0.0",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "2.1.1",
@@ -72,7 +73,7 @@
     "postcss-preset-env": "6.6.0",
     "postcss-safe-parser": "4.0.1",
     "react-app-polyfill": "^1.0.1",
-    "react-dev-utils": "^9.0.1",
+    "universal-react-dev-utils": "^9.0.1",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",

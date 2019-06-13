@@ -8,7 +8,7 @@
 'use strict';
 
 const fs = require('fs');
-const chalk = require('react-dev-utils/chalk');
+const chalk = require('universal-react-dev-utils/chalk');
 const paths = require('../../config/paths');
 const modules = require('../../config/modules');
 
@@ -85,14 +85,14 @@ module.exports = (resolve, rootDir, isEjecting) => {
   if (overrides) {
     supportedKeys.forEach(key => {
       if (overrides.hasOwnProperty(key)) {
-        if (Array.isArray(config[key]) || typeof config[key] !== 'object')  {
+        if (Array.isArray(config[key]) || typeof config[key] !== 'object') {
           // for arrays or primitive types, directly override the config key
-          config[key] = overrides[key];  
+          config[key] = overrides[key];
         } else {
           // for object types, extend gracefully
-          config[key] = Object.assign({}, config[key], overrides[key]);  
-        } 
-        
+          config[key] = Object.assign({}, config[key], overrides[key]);
+        }
+
         delete overrides[key];
       }
     });

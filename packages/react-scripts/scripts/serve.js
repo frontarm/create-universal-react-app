@@ -22,14 +22,14 @@ process.on('unhandledRejection', err => {
 const chalk = require('chalk');
 const path = require('path');
 const express = require('express');
-const { checkBrowsers } = require('react-dev-utils/browsersHelper');
-const clearConsole = require('react-dev-utils/clearConsole');
-const openBrowser = require('react-dev-utils/openBrowser');
+const { checkBrowsers } = require('universal-react-dev-utils/browsersHelper');
+const clearConsole = require('universal-react-dev-utils/clearConsole');
+const openBrowser = require('universal-react-dev-utils/openBrowser');
 const {
   choosePort,
   // prepareProxy,
   prepareUrls,
-} = require('react-dev-utils/WebpackDevServerUtils');
+} = require('universal-react-dev-utils/WebpackDevServerUtils');
 const paths = require('../config/paths');
 
 const useNodeBuild = paths.appNodeBuild;

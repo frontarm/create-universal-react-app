@@ -16,26 +16,26 @@ const resolve = require('resolve');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
+const InlineChunkHtmlPlugin = require('universal-react-dev-utils/InlineChunkHtmlPlugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const safePostCssParser = require('postcss-safe-parser');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const nodeExternals = require('webpack-node-externals');
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+const InterpolateHtmlPlugin = require('universal-react-dev-utils/InterpolateHtmlPlugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
-const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
+const WatchMissingNodeModulesPlugin = require('universal-react-dev-utils/WatchMissingNodeModulesPlugin');
+const ModuleScopePlugin = require('universal-react-dev-utils/ModuleScopePlugin');
+const getCSSModuleLocalIdent = require('universal-react-dev-utils/getCSSModuleLocalIdent');
 const paths = require('./paths');
 const modules = require('./modules');
 const getClientEnvironment = require('./env');
-const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
-const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
-const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
+const ModuleNotFoundPlugin = require('universal-react-dev-utils/ModuleNotFoundPlugin');
+const ForkTsCheckerWebpackPlugin = require('universal-react-dev-utils/ForkTsCheckerWebpackPlugin');
+const typescriptFormatter = require('universal-react-dev-utils/typescriptFormatter');
 // @remove-on-eject-begin
-const getCacheIdentifier = require('react-dev-utils/getCacheIdentifier');
+const getCacheIdentifier = require('universal-react-dev-utils/getCacheIdentifier');
 // @remove-on-eject-end
 const postcssNormalize = require('postcss-normalize');
 
@@ -161,7 +161,7 @@ module.exports = function(webpackEnv, executionEnv) {
           // require.resolve('webpack-dev-server/client') + '?/',
           // require.resolve('webpack/hot/dev-server'),
           isEnvDevelopment &&
-            require.resolve('react-dev-utils/webpackHotDevClient'),
+            require.resolve('universal-react-dev-utils/webpackHotDevClient'),
           // Finally, this is your app's code:
           paths.appWebIndexJs,
           // We include the app code last so that if there is a runtime error during
@@ -347,7 +347,9 @@ module.exports = function(webpackEnv, executionEnv) {
           use: [
             {
               options: {
-                formatter: require.resolve('react-dev-utils/eslintFormatter'),
+                formatter: require.resolve(
+                  'universal-react-dev-utils/eslintFormatter'
+                ),
                 eslintPath: require.resolve('eslint'),
                 // @remove-on-eject-begin
                 baseConfig: {
@@ -386,14 +388,14 @@ module.exports = function(webpackEnv, executionEnv) {
               loader: require.resolve('babel-loader'),
               options: {
                 customize: require.resolve(
-                  'babel-preset-react-app/webpack-overrides'
+                  'babel-preset-universal-react-app/webpack-overrides'
                 ),
                 // @remove-on-eject-begin
                 babelrc: false,
                 configFile: false,
                 presets: [
                   [
-                    require.resolve('babel-preset-react-app'),
+                    require.resolve('babel-preset-universal-react-app'),
                     { node: isEnvNode },
                   ],
                 ],
@@ -408,8 +410,8 @@ module.exports = function(webpackEnv, executionEnv) {
                     : isEnvDevelopment && 'development',
                   [
                     'babel-plugin-named-asset-import',
-                    'babel-preset-react-app',
-                    'react-dev-utils',
+                    'babel-preset-universal-react-app',
+                    'universal-react-dev-utils',
                     'react-scripts',
                   ]
                 ),
@@ -446,7 +448,9 @@ module.exports = function(webpackEnv, executionEnv) {
                 compact: false,
                 presets: [
                   [
-                    require.resolve('babel-preset-react-app/dependencies'),
+                    require.resolve(
+                      'babel-preset-universal-react-app/dependencies'
+                    ),
                     { helpers: true, node: isEnvNode },
                   ],
                 ],
@@ -459,8 +463,8 @@ module.exports = function(webpackEnv, executionEnv) {
                     : isEnvDevelopment && 'development',
                   [
                     'babel-plugin-named-asset-import',
-                    'babel-preset-react-app',
-                    'react-dev-utils',
+                    'babel-preset-universal-react-app',
+                    'universal-react-dev-utils',
                     'react-scripts',
                   ]
                 ),
