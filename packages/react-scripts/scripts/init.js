@@ -80,9 +80,9 @@ module.exports = function(
   appName,
   verbose,
   originalDirectory,
-  template,
-  universal
+  template
 ) {
+  const universal = true;
   const ownPath = path.dirname(
     require.resolve(path.join(__dirname, '..', 'package.json'))
   );
