@@ -13,7 +13,7 @@ This is a fork. For details on Create React App itself, see the [official reposi
 To add SSR support to a new create-react-app project, all you need to do is pass the `--react-scripts universal-react-scripts` option to `create-react-app`:
 
 ```bash
-npm init react-app --scripts-version universal-react-scripts
+npm init react-app my-ssr-app --scripts-version universal-react-scripts
 ```
 
 With this, you'll get an `src/index.node.js` file in addition to the standard template, from which you can implement server side rendering.
