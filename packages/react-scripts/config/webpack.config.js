@@ -412,7 +412,7 @@ module.exports = function(webpackEnv, executionEnv) {
                     'babel-plugin-named-asset-import',
                     'babel-preset-universal-react-app',
                     'universal-react-dev-utils',
-                    'react-scripts',
+                    'universal-react-scripts',
                   ]
                 ),
                 // @remove-on-eject-end
@@ -465,7 +465,7 @@ module.exports = function(webpackEnv, executionEnv) {
                     'babel-plugin-named-asset-import',
                     'babel-preset-universal-react-app',
                     'universal-react-dev-utils',
-                    'react-scripts',
+                    'universal-react-scripts',
                   ]
                 ),
                 // @remove-on-eject-end

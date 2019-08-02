@@ -232,7 +232,7 @@ inquirer
     // Add Babel config
     console.log(`  Adding ${cyan('Babel')} preset`);
     appPackage.babel = {
-      presets: ['react-app'],
+      presets: ['universal-react-app'],
     };
 
     // Add ESlint config
