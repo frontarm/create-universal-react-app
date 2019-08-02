@@ -1,5 +1,5 @@
 {
-  "name": "react-error-overlay",
+  "name": "universal-react-error-overlay",
   "version": "5.1.6",
   "description": "An overlay for displaying stack frames.",
   "main": "lib/index.js",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/frontarm/create-universal-react-app.git",
     "directory": "packages/react-error-overlay"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/frontarm/create-universal-react-app/issues"
   },
   "keywords": [
     "overlay",
