@@ -2,7 +2,7 @@
 
 Create Universal React apps, **with Server Side Rendering (SSR)**, with no build configuration.
 
-This is a fork of Create React App, with an active [Pull Request](https://github.com/facebook/create-react-app/pull/6747). For details on Create React App itself, see the [official repository &raquo;](https://github.com/facebook/create-react-app/).
+This is a fork of Create React App. For details on Create React App itself, see the [official repository](https://github.com/facebook/create-react-app/).
 
 ---
 
@@ -160,7 +160,9 @@ _You can see an example of this setup, along with async routing, styled componen
 
 ## The rest is just Create React App
 
-Lore more at the [Create React App](https://facebook.github.io/create-react-app/) website.
+Learn more at the [Create React App](https://facebook.github.io/create-react-app/) website.
+
+If you'd like to understand the changes this fork makes to standard Create React App, see the [Pull Request](https://github.com/facebook/create-react-app/pull/6747).
 
 ## License
 
