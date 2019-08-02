@@ -1,5 +1,5 @@
 {
-  "name": "create-react-app",
+  "name": "create-universal-react-app",
   "version": "3.0.1",
   "keywords": [
     "react"
@@ -7,7 +7,7 @@
   "description": "Create React apps with no build configuration.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/frontarm/create-universal-react-app.git",
     "directory": "packages/create-react-app"
   },
   "license": "MIT",
@@ -15,7 +15,7 @@
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/frontarm/create-universal-react-app/issues"
   },
   "files": [
     "index.js",
@@ -23,7 +23,7 @@
     "yarn.lock.cached"
   ],
   "bin": {
-    "create-react-app": "./index.js"
+    "create-universal-react-app": "./index.js"
   },
   "dependencies": {
     "chalk": "2.4.2",

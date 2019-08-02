@@ -4,13 +4,12 @@
   "description": "Webpack utilities used by Create React App",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamesknelson/create-react-app.git",
-    "directory": "packages/react-dev-utils",
-    "branch": "universal-react-scripts"
+    "url": "https://github.com/frontarm/create-universal-react-app.git",
+    "directory": "packages/react-dev-utils"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jamesknelson/create-react-app/issues"
+    "url": "https://github.com/frontarm/create-universal-react-app/issues"
   },
   "engines": {
     "node": ">=8.10"

@@ -4,16 +4,15 @@
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamesknelson/create-react-app.git",
-    "directory": "packages/react-scripts",
-    "branch": "universal-react-scripts"
+    "url": "https://github.com/frontarm/create-universal-react-app.git",
+    "directory": "packages/react-scripts"
   },
   "license": "MIT",
   "engines": {
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/jamesknelson/create-react-app/issues"
+    "url": "https://github.com/frontarm/create-universal-react-app/issues"
   },
   "files": [
     "bin",

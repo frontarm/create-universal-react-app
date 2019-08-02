@@ -147,7 +147,7 @@ publishToLocalRegistry
 
 # Install the app in a temporary location
 cd $temp_app_path
-npx create-react-app test-app
+npx create-universal-react-app test-app
 
 # TODO: verify we installed prerelease
 
@@ -232,11 +232,12 @@ cd test-app
 # Test the build
 yarn build
 # Check for expected output
-exists build/*.html
-exists build/static/js/*.js
-exists build/static/css/*.css
-exists build/static/media/*.svg
-exists build/favicon.ico
+exists build/node/*.html
+exists build/node/*.js
+exists build/web/static/js/*.js
+exists build/web/static/css/*.css
+exists build/web/static/media/*.svg
+exists build/web/favicon.ico
 
 # Run tests with CI flag
 CI=true yarn test
@@ -265,11 +266,12 @@ test -n "$(git diff --staged --name-only)"
 # Test the build
 yarn build
 # Check for expected output
-exists build/*.html
-exists build/static/js/*.js
-exists build/static/css/*.css
-exists build/static/media/*.svg
-exists build/favicon.ico
+exists build/node/*.html
+exists build/node/*.js
+exists build/web/static/js/*.js
+exists build/web/static/css/*.css
+exists build/web/static/media/*.svg
+exists build/web/favicon.ico
 
 # Run tests, overriding the watch option to disable it.
 # `CI=true yarn test` won't work here because `yarn test` becomes just `jest`.
