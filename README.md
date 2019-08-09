@@ -1,4 +1,4 @@
-# Create (Universal) React App
+# 💊 Create Universal React App
 
 Create Universal React apps, **with Server Side Rendering (SSR)**, with no build configuration.
 
@@ -10,23 +10,23 @@ This is a fork of Create React App. For details on Create React App itself, see 
 
 ### For new projects
 
-To add SSR support to a new create-react-app project, all you need to do is pass the `--react-scripts universal-react-scripts` option to `create-react-app`:
-
-```bash
-npm init react-app my-ssr-app --scripts-version universal-react-scripts
-```
-
-Or, yuo can use the `create-universal-react-app` package:
+To create a new project with SSR, all you need to do is use `npm init`:
 
 ```bash
 npm init universal-react-app my-ssr-app
 ```
 
-With this, you'll get an `src/index.node.js` file in addition to the standard template, from which you can implement server side rendering.
+Alternatively, you can use plain old create-react-app with a `--react-scripts universal-react-scripts` option:
+
+```bash
+create-react-app my-ssr-app --scripts-version universal-react-scripts
+```
+
+Either way, you'll get the standard Create React App template with one extra file: `src/index.node.js` (which is where you'll handle server side rendering).
 
 ### For existing projects
 
-In your package.json, just change the `react-scripts` dependency to `universal-react-scripts`. _You can leave the occurences of `react-scripts` in the `scripts` object as is._ Then, re-run `yarn install` or `npm install`, and add an `src/index.node.js` file:
+In your package.json, just change the `react-scripts` dependency to `universal-react-scripts`. _You can leave the occurences of `react-scripts` in the `scripts` object as is._ Then, re-run `yarn install` or `npm install`, and add a `src/index.node.js` file:
 
 ```js
 import fs from 'fs';
