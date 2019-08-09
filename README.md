@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  Dead Simple SSR for Create React App
+  Configuration-free SSR for Create React App
 </p>
 
 <p align="center">
@@ -67,6 +67,8 @@ export default renderer;
 ```
 
 Your app will now call the function exported by `src/index.node.js` to render its HTML.
+
+*Note: if you encounter any build errors after making this change, try deleting your `node_modules` and reinstalling them from scratch.*
 
 ## Build output
 
