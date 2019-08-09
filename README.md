@@ -1,10 +1,20 @@
-# 💊 Create Universal React App
+<h1 align="center">
+  🌐
+</h1>
 
-Create Universal React apps, **with Server Side Rendering (SSR)**, with no build configuration.
+<h2 align="center">
+  Create Universal React App
+</h2>
 
-This is a fork of Create React App. For details on Create React App itself, see the [official repository](https://github.com/facebook/create-react-app/).
+<p align="center">
+  Dead Simple SSR for Create React App
+</p>
 
----
+<p align="center">
+  <a href="https://www.npmjs.com/package/create-universal-react-app"><img alt="NPM" src="https://img.shields.io/npm/v/create-universal-react-app.svg"></a>
+</p>
+
+**This is a fork of Create React App. For details on Create React App itself, see the [official repository](https://github.com/facebook/create-react-app/).**
 
 ## Getting Started
 
