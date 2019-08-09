@@ -1,10 +1,8 @@
-<h3 align="center">
+<h1 align="center">
   🌐
-</h3>
-
-<h2 align="center">
+  <br>
   Create Universal React App
-</h2>
+</h1>
 
 <p align="center">
   Dead Simple SSR for Create React App
@@ -15,6 +13,9 @@
 </p>
 
 **This is a fork of Create React App. For details on Create React App itself, see the [official repository](https://github.com/facebook/create-react-app/).**
+
+<br>
+<br>
 
 ## Getting Started
 
