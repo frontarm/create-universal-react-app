@@ -16,7 +16,7 @@ To add SSR support to a new create-react-app project, all you need to do is pass
 npm init react-app my-ssr-app --scripts-version universal-react-scripts
 ```
 
-Or, yuo can use the `create-universal-react-app` package:
+Or, you can use the `create-universal-react-app` package:
 
 ```bash
 npm init universal-react-app my-ssr-app
