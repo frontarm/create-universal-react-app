@@ -1863,10 +1863,10 @@ babel-preset-jest@^24.6.0:
     "@babel/plugin-syntax-object-rest-spread" "^7.0.0"
     babel-plugin-jest-hoist "^24.6.0"
 
-babel-preset-universal-react-app@^9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/babel-preset-universal-react-app/-/babel-preset-universal-react-app-9.0.2.tgz#2cd4827d1f0852c816e3ee43122fd1d0cf9a1146"
-  integrity sha512-rWVGOjZCUfwqyBue0xmc6X5LGxoOGBjauqqy8ghEGk84+g1fshgdW6+pzrFgxILKQtHY/W3SCyBYDS0cJa8fvw==
+babel-preset-universal-react-app@^9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/babel-preset-universal-react-app/-/babel-preset-universal-react-app-9.0.3.tgz#d8cd6cede2e0a616240452a35a198469644f8ccc"
+  integrity sha512-dKGrxXWyErAI1LumeLxfXtQkzswI1d3ILay7cJuzElqO97f9hMV9jwsLR9trZXMu2Z9+g6NH0fA73Igc4NKT4A==
   dependencies:
     "@babel/core" "7.5.5"
     "@babel/plugin-proposal-class-properties" "7.5.5"
@@ -9243,10 +9243,10 @@ unique-slug@^2.0.0:
   dependencies:
     imurmurhash "^0.1.4"
 
-universal-react-dev-utils@^9.0.3:
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/universal-react-dev-utils/-/universal-react-dev-utils-9.0.3.tgz#3d9f1ec418b13c4344b4171b042912375085628d"
-  integrity sha512-RpIm+BwZ6W32LoGh1qoeWZ1wIt6fo1fQBbzZinVwrR4AJk7lQhziGYWkNvEqB6BJqJjwDPj9YQnxihupzrSa8w==
+universal-react-dev-utils@^9.0.4:
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/universal-react-dev-utils/-/universal-react-dev-utils-9.0.4.tgz#231ef23f7607c3124944b62d5462efe4b6aa1214"
+  integrity sha512-6uBCVkesgWsDlNgvPKrqaGPUAEUesDo7/PajbpR6BPBe30aKeeah/Yc18kTuPkxf3dcrwcqB7qlVu2rHebWbfA==
   dependencies:
     "@babel/code-frame" "7.5.5"
     address "1.1.0"
@@ -9273,12 +9273,12 @@ universal-react-dev-utils@^9.0.3:
     strip-ansi "5.2.0"
     text-table "0.2.0"
     tmp "^0.1.0"
-    universal-react-error-overlay "^6.0.0"
+    universal-react-error-overlay "^6.0.1"
 
-universal-react-error-overlay@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/universal-react-error-overlay/-/universal-react-error-overlay-6.0.0.tgz#8e987832895d4745667ee011041ac961dcd460ed"
-  integrity sha512-r+mstFZknAeaIHyEF4JDt5DWHOaj2f3RtBFC2Q0yVluXvVaX1e5N3z35vYHZVL9PK0xt92ttsVpbXDhHpgYoaQ==
+universal-react-error-overlay@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/universal-react-error-overlay/-/universal-react-error-overlay-6.0.1.tgz#822260d4c45b7c0e7053a2c053480d06834eb6b4"
+  integrity sha512-PwJoiH5d3pB7UVd/Xua9PWQrV7ED02YrDK08JRM8sYduh8zQo54PV6Ne+hLF5vfYjfRFuv1FWyHXiNb88ozloQ==
 
 universalify@^0.1.0:
   version "0.1.2"
