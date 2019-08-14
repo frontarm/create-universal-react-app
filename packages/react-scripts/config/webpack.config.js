@@ -380,14 +380,8 @@ module.exports = function(webpackEnv, executionEnv) {
                     // A config couldn't be found.
                   }
 
-                  // We allow overriding the config, only if it extends our config
-                  // (`extends` can be a string or array of strings).
-                  if (
-                    process.env.EXTEND_ESLINT &&
-                    eslintConfig &&
-                    eslintConfig.extends &&
-                    eslintConfig.extends.includes('react-app')
-                  ) {
+                  // We allow overriding the config only if the env variable is set
+                  if (process.env.EXTEND_ESLINT && eslintConfig) {
                     return eslintConfig;
                   } else {
                     return {
