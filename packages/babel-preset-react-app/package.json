@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-universal-react-app",
-  "version": "9.0.3",
+  "version": "9.0.4",
   "description": "Babel preset used by Create React App",
   "repository": {
     "type": "git",

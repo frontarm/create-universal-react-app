@@ -1,6 +1,6 @@
 {
   "name": "universal-react-scripts",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -38,7 +38,7 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.6",
     "babel-plugin-named-asset-import": "^0.3.4",
-    "babel-preset-universal-react-app": "^9.0.3",
+    "babel-preset-universal-react-app": "^9.0.4",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "2.1.1",
@@ -80,7 +80,7 @@
     "style-loader": "1.0.0",
     "terser-webpack-plugin": "1.4.1",
     "ts-pnp": "1.1.4",
-    "universal-react-dev-utils": "^9.0.4",
+    "universal-react-dev-utils": "^9.0.5",
     "url-loader": "2.1.0",
     "webpack": "4.40.2",
     "webpack-dev-server": "3.2.1",
