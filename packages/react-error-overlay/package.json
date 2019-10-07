@@ -58,7 +58,7 @@
     "promise": "8.0.3",
     "raw-loader": "^1.0.0",
     "react": "^16.8.4",
-    "react-app-polyfill": "^1.0.3",
+    "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.8.4",
     "rimraf": "^2.6.3",
     "settle-promise": "1.0.0",
