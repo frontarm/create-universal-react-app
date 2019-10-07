@@ -1,6 +1,6 @@
 {
   "name": "universal-react-dev-utils",
-  "version": "9.0.5",
+  "version": "9.1.0",
   "description": "Webpack utilities used by Create React App",
   "repository": {
     "type": "git",
@@ -76,7 +76,7 @@
     "strip-ansi": "5.2.0",
     "text-table": "0.2.0",
     "tmp": "^0.1.0",
-    "universal-react-error-overlay": "^6.0.2"
+    "universal-react-error-overlay": "^6.0.3"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
