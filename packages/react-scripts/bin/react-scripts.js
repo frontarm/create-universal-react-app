@@ -24,7 +24,7 @@ const scriptIndex = args.findIndex(
 const script = scriptIndex === -1 ? args[0] : args[scriptIndex];
 const nodeArgs = scriptIndex > 0 ? args.slice(0, scriptIndex) : [];
 
-if (['build', 'eject', 'server', 'start', 'test'].includes(script)) {
+if (['build', 'eject', 'serve', 'start', 'test'].includes(script)) {
   const result = spawn.sync(
     'node',
     nodeArgs
